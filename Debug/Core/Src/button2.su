@@ -1,0 +1,4 @@
+button2.c:17:6:updateTempValue	16	static
+button2.c:26:6:KeyInputHandler2	8	static
+button2.c:30:6:LongKeyInputHandler2	8	static
+button2.c:34:6:getKeyInput2	8	static
