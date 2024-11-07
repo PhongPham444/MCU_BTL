@@ -35,6 +35,7 @@ void KeyInputHandler3(){
 	if (mode) {
 		init();
 		mode = 0;
+		lcd_clear_display();
 	}
 }
 void LongKeyInputHandler3(){

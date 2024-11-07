@@ -14,14 +14,13 @@ int curSideState = 1;
 
 void displayContent() {
     lcd_clear_display();
-    HAL_Delay(10);
 
     if (mode == 0) {
         int temp_main = timer_counter / 100;
         int temp_side = timer_counter_side / 100;
 
         lcd_goto_XY(1, 0);
-        lcd_send_string("Main: ");
+        lcd_send_string(" Main: ");
         char mainTimeStr[7];
         snprintf(mainTimeStr, sizeof(mainTimeStr), "%d", temp_main);
         lcd_send_string(mainTimeStr);
@@ -34,7 +33,7 @@ void displayContent() {
 
     } else {
         lcd_goto_XY(1, 0);
-        lcd_send_string("Mode: ");
+        lcd_send_string(" Mode: ");
         char modeStr[3];
         snprintf(modeStr, sizeof(modeStr), "%d", mode);
         lcd_send_string(modeStr);

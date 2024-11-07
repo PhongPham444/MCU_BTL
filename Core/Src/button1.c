@@ -24,10 +24,12 @@ void KeyInputHandler1(){
 	}
 	switch(mode){
 	case 0:{
+		lcd_clear_display();
 		init();
 		break;
 	}
 	case 1:{
+		lcd_clear_display();
 		HAL_GPIO_WritePin(EN_A1_GPIO_Port, EN_A1_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(EN_A2_GPIO_Port, EN_A2_Pin, GPIO_PIN_SET);
 
@@ -36,6 +38,7 @@ void KeyInputHandler1(){
 		break;
 	}
 	case 2:{
+		lcd_clear_display();
 		HAL_GPIO_WritePin(EN_A1_GPIO_Port, EN_A1_Pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(EN_A2_GPIO_Port, EN_A2_Pin, GPIO_PIN_RESET);
 
@@ -44,6 +47,7 @@ void KeyInputHandler1(){
 		break;
 	}
 	case 3:{
+		lcd_clear_display();
 		HAL_GPIO_WritePin(EN_B1_GPIO_Port, EN_B1_Pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(EN_B2_GPIO_Port, EN_B2_Pin, GPIO_PIN_RESET);
 
